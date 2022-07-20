@@ -26,7 +26,22 @@
 .page__header {
   position: absolute;
   width: 100%;
-  top: 0;
+  top: 35px;
+
+  @media (max-width: $desktop-width) {
+    top: 30px;
+  }
+
+  @media (max-width: $tablet-width) {
+    top: 0;
+    padding-top: 20px;
+  }
+}
+
+.page__main--nojs {
+  @media (max-width: $tablet-width) {
+    margin-top: 568px;
+  }
 }
 
 .page__footer {

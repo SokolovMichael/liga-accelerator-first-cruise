@@ -15,7 +15,9 @@
       <nav class="nav nav--closed nav--nojs">
         <div class="nav__wrapper">
           <a class="nav__link nav__link--active">
-            <img class="nav__logo" src="img/svg/logo.svg" width="70" height="38" alt="Логотип компании.">
+            <svg class="nav__logo" width="70" height="38">
+              <use xlink:href="img/sprite.svg#logo"></use>
+            </svg>
           </a>
           <ul class="nav__list site-list">
             <li class="site-list__item">
@@ -32,10 +34,10 @@
             </li>
           </ul>
           <button class="nav__toggle nav__toggle--menu" type="button">
-            <svg class="nav__toggle-icon nav__toggle-icon--open-menu" width="24" height="12">
+            <svg class="nav__toggle-icon nav__toggle-icon--open-menu" width="24" height="14">
               <use xlink:href="img/sprite.svg#toggle-open-menu"></use>
             </svg>
-            <svg class="nav__toggle-icon nav__toggle-icon--close-menu" width="13" height="13">
+            <svg class="nav__toggle-icon nav__toggle-icon--close-menu" width="15" height="15">
               <use xlink:href="img/sprite.svg#toggle-close-menu"></use>
             </svg>
             <span class="visually-hidden">Открыть меню</span>
@@ -43,7 +45,7 @@
         </div>
       </nav>
     </header>
-    <main class="page__main">
+    <main class="page__main page__main--nojs">
       <div class="intro">
         <div class="intro__wrapper">
           <h1 class="intro__slogan">Круизы в Антарктику</h1>
@@ -53,7 +55,10 @@
       <section class="traveling">
         <div class="traveling__text">
           <h2 class="traveling__title">Путешествие на край Земли</h2>
-          <p class="traveling__description">Это волшебное путешествие поможет вам познакомиться поближе с удивительным миром Антарктики. Наш круизный лайнер отвезет вас на край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и многое другое.</p>
+          <p class="traveling__description">Это волшебное путешествие поможет вам познакомиться поближе&#32;
+            <br>с удивительным миром Антарктики. Наш круизный лайнер отвезет вас&#32;
+            <br>на край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и многое другое.
+          </p>
         </div>
         <div class="traveling__picture">
           <picture>
@@ -71,7 +76,9 @@
     <footer class="page__footer footer">
       <div class="footer__wrapper">
         <a class="footer__main">
-          <img class="footer__logo" src="img/svg/logo.svg" width="70" height="38" alt="Логотип компании.">
+          <svg class="footer__logo" width="70" height="38">
+            <use xlink:href="img/sprite.svg#logo"></use>
+          </svg>
         </a>
         <ul class="footer__list links">
           <li class="links__item">
@@ -91,29 +98,30 @@
           <li class="external__item">
             <a class="external__link" href="#">
               <span class="visually-hidden">Мы в Фейсбуке</span>
-              <svg class="external__link-icon" width="11" height="20">
-                <use xlink:href="img/sprite_auto.svg#external-fb"></use>
+              <svg class="external__link-icon external__link-icon--facebook" width="11" height="20">
+                <use xlink:href="img/sprite.svg#external-fb"></use>
               </svg>
             </a>
           </li>
           <li class="external__item">
             <a class="external__link" href="#">
               <span class="visually-hidden">Мы в Инстаграмме</span>
-              <svg class="external__link-icon" width="20" height="20">
-                <use xlink:href="img/sprite_auto.svg#external-instagram"></use>
+              <svg class="external__link-icon external__link-icon--instagram" width="20" height="20">
+                <use xlink:href="img/sprite.svg#external-instagram"></use>
               </svg>
             </a>
           </li>
           <li class="external__item">
             <a class="external__link" href="#">
               <span class="visually-hidden">Мы в Твиттере</span>
-              <svg class="external__link-icon" width="20" height="17">
-                <use xlink:href="img/sprite_auto.svg#external-twitter"></use>
+              <svg class="external__link-icon external__link-icon--twitter" width="20" height="17">
+                <use xlink:href="img/sprite.svg#external-twitter"></use>
               </svg>
             </a>
           </li>
         </ul>
       </div>
     </footer>
+    <script src="js/main.min.js" type="module"></script>
   </body>
 </html>

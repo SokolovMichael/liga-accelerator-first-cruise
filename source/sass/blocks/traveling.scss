@@ -4,6 +4,18 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 88px;
+
+  @media (max-width: $desktop-width) {
+    width: 678px;
+    margin-bottom: 100px;
+    gap: 30px;
+  }
+
+  @media (max-width: $tablet-width) {
+    display: block;
+    width: 290px;
+    margin-bottom: 65px;
+  }
 }
 
 .traveling__title {
@@ -11,23 +23,68 @@
   font-size: 28px;
   line-height: 42px;
   font-weight: 600;
+
+  @media (max-width: $desktop-width) {
+    margin-bottom: 30px;
+    font-size: 26px;
+    line-height: 37px;
+    width: 220px;
+  }
+
+  @media (max-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 34px;
+  }
 }
 
 .traveling__description {
   margin: 0;
   font-size: 16px;
   line-height: 24px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 40px;
+  }
 }
 
-.traveling__picture {
-  @media (min-width: $tablet-width) {
-    width: 324px;
-    height: 264px;
+.traveling__description br {
+  display: none;
+
+  @media (max-width: $desktop-width) {
+    display: block;
   }
 
-  @media (min-width: $desktop-width) {
-    width: 560px;
-    height: 301px;
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.traveling__description br br {
+  display: none;
+
+  @media (max-width: $desktop-width) {
+    display: block;
+  }
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+
+.traveling__picture {
+  height: 301px;
+  width: 560px;
+  background: $dark-background-color;
+
+  @media (max-width: $desktop-width) {
+    height: 264px;
+    width: 324px;
+  }
+
+  @media (max-width: $tablet-width) {
+    height: 186px;
+    width: 290px;
   }
 }
 
