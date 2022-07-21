@@ -47,7 +47,7 @@
   }
 }
 
-.traveling__description br {
+.traveling__description br:first-child {
   display: none;
 
   @media (max-width: $desktop-width) {
@@ -59,7 +59,7 @@
   }
 }
 
-.traveling__description br br {
+.traveling__description br:nth-child(2) {
   display: none;
 
   @media (max-width: $desktop-width) {
@@ -70,7 +70,6 @@
     display: none;
   }
 }
-
 
 .traveling__picture {
   height: 301px;

@@ -45,18 +45,18 @@ const js = () => {
 };
 
 const optimizeBackgroundImages = () => {
-  return gulp.src('source/img/intro/*.jpg')
+  return gulp.src(['source/img/**/*.{png,jpg}', '!source/img/traveling/*.{png,jpg}'])
     .pipe(squoosh())
-    .pipe(gulp.dest('build/img/intro'));
+    .pipe(gulp.dest('build/img'));
 };
 
 const copyImages = () => {
-  return gulp.src(['source/img/**/*.{png,jpg}', '!source/img/intro/*.jpg'])
+  return gulp.src(['source/img/**/*.{png,jpg}', '!source/img/intro/*.jpg', '!source/img/benefits/*.jpg'])
     .pipe(gulp.dest('build/img'));
 };
 
 const createWebp = () => {
-  return gulp.src(['source/img/**/*.{png,jpg}', '!source/img/intro/*.jpg'])
+  return gulp.src(['source/img/**/*.{png,jpg}', '!source/img/intro/*.jpg', '!source/img/benefits/*.jpg'])
     .pipe(squoosh({
         webp: {}
     }))

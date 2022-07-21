@@ -1,6 +1,6 @@
+const pageHeader = document.querySelector('.page__header');
 const navMain = document.querySelector('.nav');
 const navToggle = navMain.querySelector('.nav__toggle--menu');
-const pageMain = document.querySelector('.page__main');
 
 const onNavMenuOpen = () => {
   if (navMain.classList.contains('nav--closed')) {
@@ -13,8 +13,8 @@ const onNavMenuOpen = () => {
 };
 
 const openMenu = () => {
+  pageHeader.classList.remove('page__header--nojs');
   navMain.classList.remove('nav--nojs');
-  pageMain.classList.remove('page__main--nojs');
   navToggle.addEventListener('click', onNavMenuOpen);
 };
 

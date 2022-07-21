@@ -38,9 +38,10 @@
   }
 }
 
-.page__main--nojs {
+.page__header--nojs {
   @media (max-width: $tablet-width) {
-    margin-top: 568px;
+    position: static;
+    padding-top: 0;
   }
 }
 

@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body class="page__body">
-    <header class="page__header">
+    <header class="page__header page__header--nojs">
       <nav class="nav nav--closed nav--nojs">
         <div class="nav__wrapper">
           <a class="nav__link nav__link--active">
@@ -45,7 +45,7 @@
         </div>
       </nav>
     </header>
-    <main class="page__main page__main--nojs">
+    <main class="page__main">
       <div class="intro">
         <div class="intro__wrapper">
           <h1 class="intro__slogan">Круизы в Антарктику</h1>
@@ -70,6 +70,44 @@
             <source media="(min-width: 768px)" srcset="img/traveling/traveling-tablet.jpg 1x, img/traveling/traveling-tablet@2x.jpg 2x">
             <img class="traveling__image" src="img/traveling/traveling-mobile.jpg" srcset="traveling-mobile@2x.jpg 2x" width="290" height="186" alt="Пингвины.">
           </picture>
+        </div>
+      </section>
+      <section class="benefits">
+        <div class="benefits__wrapper">
+          <h2 class="benefits__title">Преимущества</h2>
+          <ul class="benefits__list">
+            <li class="benefits__item">
+              <svg class="benefits__icon benefits__icon--liner" width="27" height="32">
+                <use xlink:href="img/sprite.svg#liner-icon"></use>
+              </svg>
+              <h3 class="benefits__item-title">Небольшой круизный лайнер</h3>
+              <p class="benefits__item-description benefits__item-description--liner">Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет избежать шума&#32;
+                <br>и очередей&#32;
+                <br>и даст возможность насладиться видами и природой.</p>
+            </li>
+            <li class="benefits__item">
+              <svg class="benefits__icon benefits__icon--all-inclusive" width="38" height="21">
+                <use xlink:href="img/sprite.svg#all-inclusive-icon"></use>
+              </svg>
+              <h3 class="benefits__item-title benefits__item-title--all-inclusive">Система&#32;
+                <br>все включено</h3>
+              <p class="benefits__item-description benefits__item-description--all-inclusive">Все наши круизы работают&#32;
+                <br>по системе “Все Включено”. Великолепные блюда&#32;
+                <br>и безлимитный бар доступны для вас&#32;
+                <br>24 часа.</p>
+            </li>
+            <li class="benefits__item">
+              <svg class="benefits__icon benefits__icon--tour" width="42" height="15">
+                <use xlink:href="img/sprite.svg#tour-icon"></use>
+              </svg>
+              <h3 class="benefits__item-title">Экскурсионные туры на Zodiac</h3>
+              <p class="benefits__item-description benefits__item-description--tour">Экскурсионные туры&#32;
+                <br>к берегам Антарктиды совершаются&#32;
+                <br>на оборудованных лодках&#32;
+                <br>типа Zodiac&#32;
+                <br>в сопровождении опытных экскурсоводов.</p>
+            </li>
+          </ul>
         </div>
       </section>
     </main>

@@ -19,6 +19,14 @@
   min-height: 38px;
 }
 
+.nav--nojs .nav__wrapper {
+  @media (max-width: $tablet-width) {
+    align-items: flex-start;
+    flex-direction: column;
+    background: $light-text-color;
+  }
+}
+
 .nav__logo {
   fill: $light-text-color;
 
@@ -35,7 +43,10 @@
 
 .nav--nojs .nav__logo {
   @media (max-width: $tablet-width) {
-    margin-top: 586px;
+    margin-top1: 586px;
+    fill: $dark-background-color;
+    margin-top1: 0;
+    margin-top: 20px;
   }
 }
 
@@ -49,14 +60,14 @@
   @media (max-width: $tablet-width) {
     display: flex;
     flex-direction: column;
-    position: absolute;
+    position: static;
     left: 35px;
     right: 0;
     top: 0;
     z-index: 10;
     background: $light-text-color;
     min-height: 568px;
-    padding: 75px 15px 15px;
+    padding: 33px 0 15px;
     box-sizing: border-box;
   }
 }
@@ -73,6 +84,7 @@
   min-height: 568px;
   padding: 75px 15px 15px;
   box-sizing: border-box;
+
 }
 
 .nav__toggle {
