@@ -1,0 +1,45 @@
+.control {
+  position: relative;
+  cursor: pointer;
+  padding-left: 23px;
+
+  @media (max-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.control__mark-icon {
+  display: none;
+  position: absolute;
+  top: 6px;
+  left: 4px;
+  width: 12px;
+  height: 8px;
+  content: "";
+  z-index: 2;
+  fill: $base-background-color;
+}
+
+.control__mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  background: $base-background-color;
+  content: "";
+}
+
+.control__label {
+  color: $light-text-color;
+  font-size: 10px;
+  line-height: 13px;
+
+  @media (max-width: $tablet-width) {
+    line-height: 12px;
+  }
+}
+
+.control__input[type="checkbox"]:checked + .control__mark-icon {
+  display: block;
+}

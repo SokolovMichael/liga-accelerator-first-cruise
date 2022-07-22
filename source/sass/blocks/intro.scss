@@ -1,7 +1,7 @@
 .intro {
   background: $dark-background-color;
   color: $light-text-color;
-  background-image: url("../img/intro/back-intro-desktop.jpg");
+  background-image: url("../img/background/intro/back-desktop.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -9,26 +9,26 @@
   margin-bottom: 120px;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/intro/back-intro-desktop@2x.jpg");
+    background-image: url("../img/background/intro/back-desktop@2x.jpg");
   }
 
   @media (max-width: $desktop-width) {
-    background-image: url("../img/intro/back-intro-tablet.jpg");
+    background-image: url("../img/background/intro/back-tablet.jpg");
     min-height: 638px;
     margin-bottom: 100px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/intro/back-intro-tablet@2x.jpg");
+      background-image: url("../img/background/intro/back-tablet@2x.jpg");
     }
   }
 
   @media (max-width: $tablet-width) {
-    background-image: url("../img/intro/back-intro-mobile.jpg");
+    background-image: url("../img/background/intro/back-mobile.jpg");
     min-height: 500px;
     margin-bottom: 65px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/intro/back-intro-mobile@2x.jpg");
+      background-image: url("../img/background/intro/back-mobile@2x.jpg");
     }
   }
 }

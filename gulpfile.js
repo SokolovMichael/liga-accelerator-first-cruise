@@ -45,22 +45,22 @@ const js = () => {
 };
 
 const optimizeBackgroundImages = () => {
-  return gulp.src(['source/img/**/*.{png,jpg}', '!source/img/traveling/*.{png,jpg}'])
+  return gulp.src(['source/img/background/**/*.{png,jpg}', '!source/img/content/**/*.{png,jpg}'])
     .pipe(squoosh())
-    .pipe(gulp.dest('build/img'));
+    .pipe(gulp.dest('build/img/background'));
 };
 
 const copyImages = () => {
-  return gulp.src(['source/img/**/*.{png,jpg}', '!source/img/intro/*.jpg', '!source/img/benefits/*.jpg'])
-    .pipe(gulp.dest('build/img'));
+  return gulp.src(['source/img/content/**/*.{png,jpg}', '!source/img/background/**/*.{png,jpg}'])
+    .pipe(gulp.dest('build/img/content'));
 };
 
 const createWebp = () => {
-  return gulp.src(['source/img/**/*.{png,jpg}', '!source/img/intro/*.jpg', '!source/img/benefits/*.jpg'])
+  return gulp.src(['source/img/content/**/*.{png,jpg}', '!source/img/background/**/*.{png,jpg}'])
     .pipe(squoosh({
         webp: {}
     }))
-    .pipe(gulp.dest('build/img'));
+    .pipe(gulp.dest('build/img/content'));
 };
 
 const svg = () => {

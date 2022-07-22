@@ -7,6 +7,7 @@
   color: $base-text-color;
   background: $base-background-color;
   min-width: $mobile-width-only;
+  scroll-behavior: smooth;
 
   @media (min-width: $mobile-width-only) {
     overflow-x: hidden;

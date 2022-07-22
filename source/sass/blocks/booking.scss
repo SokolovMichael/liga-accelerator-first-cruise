@@ -1,0 +1,126 @@
+.booking {
+  background: $blue-background-color;
+  padding: 50px 0;
+  background-image: url("../img/background/booking/back-desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 120px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/background/booking/back-desktop@2x.jpg");
+  }
+
+  @media (max-width: $desktop-width) {
+    padding: 100px 0;
+    background-image: url("../img/background/booking/back-tablet.jpg");
+    margin-bottom: 100px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background/booking/back-tablet@2x.jpg");
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    background-image: url("../img/background/booking/back-mobile.jpg");
+    margin-bottom: 65px;
+    padding: 65px 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background/booking/back-mobile@2x.jpg");
+    }
+  }
+}
+
+.booking__wrapper {
+  width: 1040px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 455px;
+  gap: 144px;
+
+  @media (max-width: $desktop-width) {
+    width: 419px;
+    display: block;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 290px;
+  }
+}
+
+.booking__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media (max-width: $desktop-width) {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 40px;
+  }
+}
+
+.booking__title {
+  margin: 0 0 30px;
+  font-size: 40px;
+  line-height: 60px;
+  width: 493px;
+
+  @media (max-width: $desktop-width) {
+    font-size: 34px;
+    line-height: 51px;
+    margin-bottom: 25px;
+    width: auto;
+  }
+
+  @media (max-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 31px;
+  }
+}
+
+.booking__description {
+  margin: 0;
+  font-size: 18px;
+  line-height: 27px;
+  width: 352px;
+
+  @media (max-width: $desktop-width) {
+    margin: 0 auto;
+  }
+
+  @media (max-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 22px;
+    width: auto;
+  }
+}
+
+.booking__description br {
+  display: none;
+
+  @media (max-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.booking__form {
+  background: $dark-background-color;
+  padding: 50px;
+
+  @media (max-width: $desktop-width) {
+    width: 403px;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding: 40px 30px;
+    width: 290px;
+  }
+}
