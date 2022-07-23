@@ -30,7 +30,7 @@
               <a class="site-list__item-link" href="#catalog">Ближайшие круизы</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__item-link" href="#">Контакты</a>
+              <a class="site-list__item-link" href="#contacts">Контакты</a>
             </li>
           </ul>
           <button class="nav__toggle nav__toggle--menu" type="button">
@@ -384,11 +384,6 @@
           </li>
         </ul>
       </section>
-
-
-
-
-
       <section class="booking" id="booking">
         <div class="booking__wrapper">
           <div class="booking__text">
@@ -433,13 +428,35 @@
           </form>
         </div>
       </section>
-
-
-
-
-
-
-
+      <section class="contacts" id="contacts">
+        <div class="contacts__wrapper">
+          <h2 class="visually-hidden">Контакты</h2>
+          <div class="contacts__road-map">
+            <iframe class="contacts__iframe"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253323!2d30.32085871569272!3d59.93871648187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1658607611962!5m2!1sru!2sru"
+              allowfullscreen
+              title="Офис компании по адресу ул. Большая Конюшенная, 19/8">
+            </iframe>
+          </div>
+          <address class="contacts__information">
+            <p class="contacts__description">У вас ещё остались вопросы или сомнения? Приезжайте к&nbsp;нам в&nbsp;офис и мы вам все расскажем.</p>
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <svg class="contacts__icon" width="18" height="22">
+                  <use xlink:href="img/sprite.svg#location-icon"></use>
+                </svg>
+                <p class="contacts__details">г. Санкт Петербург, ул.&nbsp;Большая Конюшенная, 19/8</p>
+              </li>
+              <li class="contacts__item">
+                <svg class="contacts__icon" width="18" height="18">
+                  <use xlink:href="img/sprite.svg#phone-icon"></use>
+                </svg>
+                <a class="contacts__details" href="tel:+78002000000">8-800-200-00-00</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+      </section>
     </main>
     <footer class="page__footer footer">
       <div class="footer__wrapper">
@@ -459,7 +476,7 @@
             <a class="links__item-link" href="#catalog">Ближайшие круизы</a>
           </li>
           <li class="links__item">
-            <a class="links__item-link" href="#">Контакты</a>
+            <a class="links__item-link" href="#contacts">Контакты</a>
           </li>
         </ul>
         <ul class="footer__list external">
