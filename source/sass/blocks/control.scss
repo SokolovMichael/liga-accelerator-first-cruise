@@ -5,19 +5,25 @@
 
   @media (max-width: $tablet-width) {
     display: flex;
+    padding-left: 28px;
   }
 }
 
 .control__mark-icon {
   display: none;
   position: absolute;
-  top: 6px;
-  left: 4px;
+  top: 5px;
+  left: 3px;
   width: 12px;
   height: 8px;
   content: "";
   z-index: 2;
-  fill: $base-background-color;
+  fill: $base-light-color;
+
+  @media (max-width: $tablet-width) {
+    top: 8px;
+    left: 4px;
+  }
 }
 
 .control__mark {
@@ -26,20 +32,27 @@
   left: 0;
   width: 18px;
   height: 18px;
-  background: $base-background-color;
+  background: $base-light-color;
   content: "";
+
+  @media (max-width: $tablet-width) {
+    width: 20px;
+    height: 20px;
+    top: 2px;
+  }
 }
 
-.control__label {
-  color: $light-text-color;
+.control span:last-child {
+  color: $base-light-color;
   font-size: 10px;
   line-height: 13px;
 
   @media (max-width: $tablet-width) {
     line-height: 12px;
+    width: 150px;
   }
 }
 
-.control__input[type="checkbox"]:checked + .control__mark-icon {
+.control input[type="checkbox"]:checked + .control__mark-icon {
   display: block;
 }

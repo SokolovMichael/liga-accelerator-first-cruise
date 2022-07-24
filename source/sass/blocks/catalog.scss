@@ -4,31 +4,32 @@
 
   @media (max-width: $desktop-width) {
     width: 648px;
-    margin-bottom: 100px;
+    margin-bottom: 101px;
   }
 
   @media (max-width: $tablet-width) {
     width: 270px;
-    margin-bottom: 65x;
+    margin-bottom: 65px;
   }
 }
 
-.catalog__title {
+.catalog h2 {
   text-align: center;
   font-size: 28px;
   line-height: 42px;
   font-weight: 600;
-  margin: 0 0 60px;
+  margin: 0 0 49px;
 
   @media (max-width: $desktop-width) {
     font-size: 26px;
     line-height: 39px;
+    margin-bottom: 50px;
   }
 
   @media (max-width: $tablet-width) {
     font-size: 24px;
     line-height: 36px;
-    margin-bottom: 40px;
+    margin-bottom: 31px;
   }
 }
 

@@ -23,12 +23,12 @@
   @media (max-width: $tablet-width) {
     align-items: flex-start;
     flex-direction: column;
-    background: $light-text-color;
+    background: $base-light-color;
   }
 }
 
 .nav__logo {
-  fill: $light-text-color;
+  fill: $base-light-color;
 
   @media (max-width: $desktop-width) {
     width: 38px;
@@ -38,14 +38,23 @@
   @media (max-width: $tablet-width) {
     width: 42px;
     height: 22px;
+    margin-top: 5px;
   }
 }
 
 .nav--nojs .nav__logo {
   @media (max-width: $tablet-width) {
-    fill: $dark-background-color;
+    fill: $base-dark-color;
     margin-top: 20px;
   }
+}
+
+.nav--opened .nav__logo {
+  fill: $base-dark-color;
+  z-index: 11;
+  position: absolute;
+  top: 15px;
+  left: 50px;
 }
 
 .nav__list {
@@ -63,7 +72,7 @@
     right: 0;
     top: 0;
     z-index: 10;
-    background: $light-text-color;
+    background: $base-light-color;
     min-height: 568px;
     padding: 33px 0 15px;
     box-sizing: border-box;
@@ -78,7 +87,7 @@
   right: 0;
   top: 0;
   z-index: 10;
-  background: $light-text-color;
+  background: $base-light-color;
   min-height: 568px;
   padding: 75px 15px 15px;
   box-sizing: border-box;
@@ -92,11 +101,18 @@
     cursor: pointer;
     background-color: transparent;
     border: none;
-    width: 30px;
+    width: 25px;
     height: 30px;
     box-sizing: border-box;
     position: relative;
     z-index: 11;
+  }
+}
+
+.nav--opened .nav__toggle {
+  @media (max-width: $tablet-width) {
+    width: 16px;
+    height: 30px;
   }
 }
 
@@ -115,10 +131,10 @@
   display: none;
 }
 
-.nav--opened .nav__logo {
-  fill: $dark-background-color;
-  z-index: 11;
-  position: absolute;
-  top: 25px;
-  left: 50px;
+.nav__toggle:hover .nav__toggle-icon {
+  opacity: 0.2;
+}
+
+.nav__toggle:active .nav__toggle-icon {
+  opacity: 1;
 }

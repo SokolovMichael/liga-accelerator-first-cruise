@@ -1,12 +1,13 @@
 .intro {
-  background: $dark-background-color;
-  color: $light-text-color;
+  background: $base-dark-color;
+  color: $base-light-color;
   background-image: url("../img/background/intro/back-desktop.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   min-height: 650px;
   margin-bottom: 120px;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/background/intro/back-desktop@2x.jpg");
@@ -25,7 +26,7 @@
   @media (max-width: $tablet-width) {
     background-image: url("../img/background/intro/back-mobile.jpg");
     min-height: 500px;
-    margin-bottom: 65px;
+    margin-bottom: 56px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/background/intro/back-mobile@2x.jpg");
@@ -36,38 +37,38 @@
 .intro__wrapper {
   width: 970px;
   margin: 0 auto;
-  padding-top: 283px;
+  padding-top: 270px;
 
   @media (max-width: $desktop-width) {
     width: 678px;
-    padding-top: 280px;
+    padding-top: 268px;
   }
 
   @media (max-width: $tablet-width) {
-    padding-top: 185px;
+    padding-top: 175px;
     width: 290px;
   }
 }
 
-.intro__slogan {
-  margin: 0 0 30px;
+.intro__wrapper h1 {
+  margin: 0 0 10px;
   font-size: 54px;
   line-height: 66px;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 
   @media (max-width: $desktop-width) {
-    margin-bottom: 29px;
+    margin-bottom: 12px;
     font-size: 50px;
     line-height: 61px;
   }
 
   @media (max-width: $tablet-width) {
-    margin-bottom: 25px;
     font-size: 36px;
     line-height: 45px;
   }
 }
 
-.intro__description {
+.intro__wrapper p {
   margin: 0;
   font-size: 20px;
   line-height: 25px;
@@ -79,5 +80,6 @@
 
   @media (max-width: $tablet-width) {
     font-size: 16px;
+    width: 200px;
   }
 }

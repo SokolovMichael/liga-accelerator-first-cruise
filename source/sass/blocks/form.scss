@@ -1,16 +1,20 @@
 .form__fieldset {
   border: none;
   padding: 0;
-  margin: 0 0 30px;
+  margin: 0 0 29px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 28px;
+  }
 }
 
-.form__title {
-  color: $light-text-color;
+.form__fieldset legend {
+  color: $base-light-color;
   font-size: 18px;
   line-height: 27px;
   font-weight: 500;
   width: 303px;
-  margin-bottom: 35px;
+  margin-bottom: 27px;
 
   @media (max-width: $tablet-width) {
     line-height: 25px;
@@ -21,7 +25,7 @@
 
 .form__list {
   list-style-type: none;
-  margin: 0 0 20px;
+  margin: 0 0 19px;
   padding: 0;
 }
 
@@ -33,21 +37,29 @@
   margin-bottom: 0;
 }
 
-.form__input {
+.form__item input {
   width: 100%;
   font-size: 14px;
   line-height: 21px;
-  padding: 11px 16px;
+  padding: 9px 14px;
   box-sizing: border-box;
 }
 
-.form__submit {
+.form input[type="submit"] {
   width: 100%;
-  background: $base-background-color;
+  background: $base-light-color;
   border: none;
   font-size: 14px;
   line-height: 21px;
   font-weight: 600;
-  padding: 15px 15px 17px;
+  padding: 11px;
   cursor: pointer;
+}
+
+.form input[type="submit"]:hover {
+  opacity: 0.2;
+}
+
+.form input[type="submit"]:active {
+  opacity: 1;
 }

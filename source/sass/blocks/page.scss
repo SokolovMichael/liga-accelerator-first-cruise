@@ -4,10 +4,18 @@
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
-  color: $base-text-color;
-  background: $base-background-color;
+  color: $base-dark-color;
+  background: $base-light-color;
   min-width: $mobile-width-only;
   scroll-behavior: smooth;
+
+  @media (max-width: $desktop-width) {
+    padding: 0 4px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding: 0;
+  }
 
   @media (min-width: $mobile-width-only) {
     overflow-x: hidden;
@@ -27,15 +35,16 @@
 .page__header {
   position: absolute;
   width: 100%;
-  top: 35px;
+  top: 33px;
+  z-index: 2;
 
   @media (max-width: $desktop-width) {
-    top: 30px;
+    top: 20px;
   }
 
   @media (max-width: $tablet-width) {
     top: 0;
-    padding-top: 20px;
+    padding-top: 12px;
   }
 }
 
@@ -47,5 +56,5 @@
 }
 
 .page__footer {
-  background: $dark-background-color;
+  background: $base-dark-color;
 }

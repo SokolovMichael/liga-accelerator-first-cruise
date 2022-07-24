@@ -1,23 +1,30 @@
 .external {
   list-style-type: none;
-  margin: 0;
   padding: 0;
   display: flex;
+  margin: 4px 0 0;
+  justify-content: space-between;
+  width: 117px;
+
+  @media (max-width: $desktop-width) {
+    width: 95px;
+    margin-top: 0;
+  }
+
+  @media (max-width: $desktop-width) {
+    width: 90px;
+  }
 }
 
 .external__item {
   position: relative;
 }
 
-.external__item:last-child {
-  margin-right: 0;
-}
-
 .external__link {
-  padding: 18px;
+  padding: 15px;
 
   @media (max-width: $desktop-width) {
-    padding: 14px;
+    padding: 10px;
   }
 }
 
@@ -49,4 +56,12 @@
     width: 16px;
     height: 13px;
   }
+}
+
+.external__item:hover .external__link-icon {
+  opacity: 0.2;
+}
+
+.external__item:active .external__link-icon {
+  opacity: 1;
 }

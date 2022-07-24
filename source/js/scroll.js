@@ -36,4 +36,4 @@ const scrollTo = () => {
   scrollFooterAnchors();
 };
 
-export { scrollTo };
+export {scrollTo};

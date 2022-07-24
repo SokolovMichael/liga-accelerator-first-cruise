@@ -18,4 +18,4 @@ const openMenu = () => {
   navToggle.addEventListener('click', onNavMenuOpen);
 };
 
-export { openMenu };
+export {openMenu};

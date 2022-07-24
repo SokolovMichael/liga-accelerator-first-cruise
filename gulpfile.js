@@ -13,29 +13,24 @@ const del = require('del');
 const webpackStream = require('webpack-stream');
 const webpackConfig = require('./webpack.config.js');
 const gcmq = require('gulp-group-css-media-queries');
-const htmlmin = require('gulp-htmlmin');
 const squoosh = require('gulp-libsquoosh');
 const svgo = require('gulp-svgo');
 
 const css = () => {
   return gulp.src('source/sass/style.scss')
-    .pipe(plumber())
-    .pipe(sourcemap.init())
-    .pipe(sass())
-    .pipe(postcss([autoprefixer({
-      grid: true,
-    })]))
-    .pipe(gcmq()) // выключите, если в проект импортятся шрифты через ссылку на внешний источник
-    .pipe(csso())
-    .pipe(rename('style.min.css'))
-    .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
-    .pipe(server.stream());
-};
-
-const html = () => {
-  return gulp.src('source/*.html')
-    .pipe(htmlmin({ collapseWhitespace: true }))
-    .pipe(gulp.dest('build'));
+      .pipe(plumber())
+      .pipe(sourcemap.init())
+      .pipe(sass())
+      .pipe(postcss([autoprefixer({
+        grid: true,
+      })]))
+      .pipe(gcmq()) // выключите, если в проект импортятся шрифты через ссылку на внешний источник
+      .pipe(gulp.dest('build/css'))
+      .pipe(csso())
+      .pipe(rename('style.min.css'))
+      .pipe(sourcemap.write('.'))
+      .pipe(gulp.dest('build/css'))
+      .pipe(server.stream());
 };
 
 const js = () => {
@@ -81,6 +76,7 @@ const sprite = () => {
 
 const copy = () => {
   return gulp.src([
+    'source/**.html',
     'source/fonts/**',
   ], {
     base: 'source',
@@ -119,7 +115,7 @@ const refresh = (done) => {
   done();
 };
 
-const build = gulp.series(clean, copy, optimizeBackgroundImages, copyImages, css, html, js, svg, sprite, createWebp);
+const build = gulp.series(clean, copy, optimizeBackgroundImages, copyImages, css, js, svg, sprite, createWebp);
 
 const start = gulp.series(build, syncServer);
 
