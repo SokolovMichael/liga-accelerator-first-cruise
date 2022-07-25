@@ -690,19 +690,6 @@ img {
   position: relative;
 }
 
-.benefits__icon {
-  position: absolute;
-  top: 29px;
-}
-
-.benefits__icon--all-inclusive {
-  top: 34px;
-}
-
-.benefits__icon--tour {
-  top: 37px;
-}
-
 .benefits__item h3 {
   margin: 0 0 8px;
   font-size: 18px;
@@ -714,16 +701,29 @@ img {
   margin: 0;
 }
 
-.benefits__item:nth-child(2) p {
+.benefits__item--all-inclusive p {
   width: 280px;
 }
 
-.benefits__item:last-child p {
+.benefits__item--tour p {
   width: 241px;
 }
 
-.benefits__item:last-child p br:nth-child(2) {
+.benefits__item--tour p br:last-child {
   display: none;
+}
+
+.benefits__icon {
+  position: absolute;
+  top: 29px;
+}
+
+.benefits__icon--all-inclusive {
+  top: 34px;
+}
+
+.benefits__icon--tour {
+  top: 37px;
 }
 
 .catalog {
@@ -959,7 +959,7 @@ img {
   box-sizing: border-box;
 }
 
-.form input[type="submit"] {
+.form button {
   width: 100%;
   background: #f9fbfd;
   border: none;
@@ -970,11 +970,11 @@ img {
   cursor: pointer;
 }
 
-.form input[type="submit"]:hover {
+.form button:hover {
   opacity: 0.2;
 }
 
-.form input[type="submit"]:active {
+.form button:active {
   opacity: 1;
 }
 
@@ -1312,6 +1312,24 @@ img {
     padding: 70px 20px 0;
   }
 
+  .benefits__item h3 {
+    line-height: 25px;
+    width: 170px;
+    margin-bottom: 10px;
+  }
+
+  .benefits__item--all-inclusive p {
+    width: auto;
+  }
+
+  .benefits__item--tour p {
+    width: 167px;
+  }
+
+  .benefits__item--tour p br:first-child {
+    display: none;
+  }
+
   .benefits__icon--liner {
     width: 21px;
     height: 26px;
@@ -1328,24 +1346,6 @@ img {
     width: 38px;
     height: 13px;
     top: 32px;
-  }
-
-  .benefits__item h3 {
-    line-height: 25px;
-    width: 170px;
-    margin-bottom: 10px;
-  }
-
-  .benefits__item:nth-child(2) p {
-    width: auto;
-  }
-
-  .benefits__item:last-child p {
-    width: 167px;
-  }
-
-  .benefits__item:last-child p br:first-child {
-    display: none;
   }
 
   .catalog {
@@ -1729,23 +1729,23 @@ img {
     margin-bottom: 30px;
   }
 
-  .benefits__item:last-child {
+  .benefits__item--tour {
     margin-bottom: 0;
   }
 
-  .benefits__item:nth-child(2) p {
+  .benefits__item--all-inclusive p {
     width: 220px;
   }
 
-  .benefits__item:last-child p {
+  .benefits__item--tour p {
     width: auto;
   }
 
-  .benefits__item:last-child p br:first-child {
+  .benefits__item--tour p br:first-child {
     display: block;
   }
 
-  .benefits__item:last-child p br:nth-child(2) {
+  .benefits__item--tour p br:last-child {
     display: block;
   }
 

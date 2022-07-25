@@ -1,7 +1,7 @@
 .information {
   color: $base-light-color;
 
-  @media (max-width: $desktop-width) {
+  @media (max-width: $max-tablet-width) {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -15,7 +15,7 @@
 .information__item:first-child {
   margin-bottom: 22px;
 
-  @media (max-width: $desktop-width) {
+  @media (max-width: $max-tablet-width) {
     margin-bottom: auto;
   }
 }
@@ -32,11 +32,11 @@
 .information__item:first-child h4 {
   margin-bottom: 10px;
 
-  @media (max-width: $desktop-width) {
+  @media (max-width: $max-tablet-width) {
     margin-bottom: 1px;
   }
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $max-mobile-width) {
     margin-bottom: 10px;
   }
 }
@@ -47,7 +47,7 @@
   white-space: nowrap;
   overflow: hidden;
 
-  @media (max-width: $desktop-width) {
+  @media (max-width: $max-tablet-width) {
     white-space: normal;
 
     /* stylelint-disable */
@@ -59,7 +59,7 @@
     /* stylelint-enable */
   }
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $max-mobile-width) {
     white-space: nowrap;
   }
 }

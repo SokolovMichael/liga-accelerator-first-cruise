@@ -9,11 +9,11 @@
   min-width: $mobile-width-only;
   scroll-behavior: smooth;
 
-  @media (max-width: $desktop-width) {
+  @media (max-width: $max-tablet-width) {
     padding: 0 4px;
   }
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $max-mobile-width) {
     padding: 0;
   }
 
@@ -38,18 +38,18 @@
   top: 33px;
   z-index: 2;
 
-  @media (max-width: $desktop-width) {
+  @media (max-width: $max-tablet-width) {
     top: 20px;
   }
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $max-mobile-width) {
     top: 0;
     padding-top: 12px;
   }
 }
 
 .page__header--nojs {
-  @media (max-width: $tablet-width) {
+  @media (max-width: $max-mobile-width) {
     position: static;
     padding-top: 0;
   }

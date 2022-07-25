@@ -2,11 +2,11 @@
   width: 1160px;
   margin: 0 auto;
 
-  @media (max-width: $desktop-width) {
+  @media (max-width: $max-tablet-width) {
     width: 678px;
   }
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $max-mobile-width) {
     margin: 0 15px;
     width: auto;
   }
@@ -20,7 +20,7 @@
 }
 
 .nav--nojs .nav__wrapper {
-  @media (max-width: $tablet-width) {
+  @media (max-width: $max-mobile-width) {
     align-items: flex-start;
     flex-direction: column;
     background: $base-light-color;
@@ -30,12 +30,12 @@
 .nav__logo {
   fill: $base-light-color;
 
-  @media (max-width: $desktop-width) {
+  @media (max-width: $max-tablet-width) {
     width: 38px;
     height: 20px;
   }
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $max-mobile-width) {
     width: 42px;
     height: 22px;
     margin-top: 5px;
@@ -43,7 +43,7 @@
 }
 
 .nav--nojs .nav__logo {
-  @media (max-width: $tablet-width) {
+  @media (max-width: $max-mobile-width) {
     fill: $base-dark-color;
     margin-top: 20px;
   }
@@ -58,13 +58,13 @@
 }
 
 .nav__list {
-  @media (max-width: $tablet-width) {
+  @media (max-width: $max-mobile-width) {
     display: none;
   }
 }
 
 .nav--nojs .nav__list {
-  @media (max-width: $tablet-width) {
+  @media (max-width: $max-mobile-width) {
     display: flex;
     flex-direction: column;
     position: static;
@@ -96,7 +96,7 @@
 .nav__toggle {
   display: none;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $max-mobile-width) {
     display: block;
     cursor: pointer;
     background-color: transparent;
@@ -110,7 +110,7 @@
 }
 
 .nav--opened .nav__toggle {
-  @media (max-width: $tablet-width) {
+  @media (max-width: $max-mobile-width) {
     width: 16px;
     height: 30px;
   }

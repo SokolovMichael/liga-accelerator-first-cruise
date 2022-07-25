@@ -5,13 +5,13 @@
   grid-template-columns: 1fr 1fr;
   gap: 88px;
 
-  @media (max-width: $desktop-width) {
+  @media (max-width: $max-tablet-width) {
     width: 678px;
     margin-bottom: 94px;
     gap: 30px;
   }
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $max-mobile-width) {
     display: block;
     width: 290px;
     margin-bottom: 65px;
@@ -21,11 +21,11 @@
 .traveling__text {
   margin-top: 56px;
 
-  @media (max-width: $desktop-width) {
+  @media (max-width: $max-tablet-width) {
     margin-top: 0;
   }
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $max-mobile-width) {
     margin-bottom: 33px;
   }
 }
@@ -36,14 +36,14 @@
   line-height: 42px;
   font-weight: 600;
 
-  @media (max-width: $desktop-width) {
+  @media (max-width: $max-tablet-width) {
     margin-bottom: 15px;
     font-size: 26px;
     line-height: 18px;
     width: 220px;
   }
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $max-mobile-width) {
     font-size: 24px;
     line-height: 34px;
     margin-bottom: 13px;
@@ -51,13 +51,13 @@
 }
 
 .traveling__text h2 span {
-  @media (max-width: $desktop-width) {
+  @media (max-width: $max-tablet-width) {
     display: block;
     line-height: 37px;
     margin-top: 8px;
   }
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $max-mobile-width) {
     margin-top: 0;
   }
 }
@@ -73,12 +73,12 @@
   width: 560px;
   background: $base-dark-color;
 
-  @media (max-width: $desktop-width) {
+  @media (max-width: $max-tablet-width) {
     height: 264px;
     width: 324px;
   }
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $max-mobile-width) {
     height: 186px;
     width: 290px;
   }

@@ -13,7 +13,7 @@
     background-image: url("../img/background/intro/back-desktop@2x.jpg");
   }
 
-  @media (max-width: $desktop-width) {
+  @media (max-width: $max-tablet-width) {
     background-image: url("../img/background/intro/back-tablet.jpg");
     min-height: 638px;
     margin-bottom: 100px;
@@ -23,7 +23,7 @@
     }
   }
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $max-mobile-width) {
     background-image: url("../img/background/intro/back-mobile.jpg");
     min-height: 500px;
     margin-bottom: 56px;
@@ -39,12 +39,12 @@
   margin: 0 auto;
   padding-top: 270px;
 
-  @media (max-width: $desktop-width) {
+  @media (max-width: $max-tablet-width) {
     width: 678px;
     padding-top: 268px;
   }
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $max-mobile-width) {
     padding-top: 175px;
     width: 290px;
   }
@@ -56,13 +56,13 @@
   line-height: 66px;
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 
-  @media (max-width: $desktop-width) {
+  @media (max-width: $max-tablet-width) {
     margin-bottom: 12px;
     font-size: 50px;
     line-height: 61px;
   }
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $max-mobile-width) {
     font-size: 36px;
     line-height: 45px;
   }
@@ -73,12 +73,12 @@
   font-size: 20px;
   line-height: 25px;
 
-  @media (max-width: $desktop-width) {
+  @media (max-width: $max-tablet-width) {
     font-size: 18px;
     line-height: 22px;
   }
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $max-mobile-width) {
     font-size: 16px;
     width: 200px;
   }

@@ -8,11 +8,11 @@
 .site-list__item {
   margin-right: 34px;
 
-  @media (max-width: $desktop-width) {
+  @media (max-width: $max-tablet-width) {
     margin-right: 24px;
   }
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $max-mobile-width) {
     margin: 0 0 8px;
   }
 }
@@ -20,7 +20,7 @@
 .site-list__item:last-child {
   margin-right: 0;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $max-mobile-width) {
     margin-bottom: 0;
   }
 }
@@ -33,12 +33,12 @@
   font-weight: 500;
   display: block;
 
-  @media (max-width: $desktop-width) {
+  @media (max-width: $max-tablet-width) {
     font-size: 14px;
     line-height: 18px;
   }
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $max-mobile-width) {
     font-size: 18px;
     line-height: 22px;
     color: $base-dark-color;

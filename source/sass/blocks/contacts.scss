@@ -2,12 +2,12 @@
   width: 1160px;
   margin: 0 auto 120px;
 
-  @media (max-width: $desktop-width) {
+  @media (max-width: $max-tablet-width) {
     width: 678px;
     margin-bottom: 100px;
   }
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $max-mobile-width) {
     width: 290px;
     margin-bottom: 65px;
   }
@@ -19,13 +19,13 @@
   gap: 100px;
   min-height: 306px;
 
-  @media (max-width: $desktop-width) {
+  @media (max-width: $max-tablet-width) {
     grid-template-columns: 1fr 324px;
     gap: 30px;
     min-height: 335px;
   }
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $max-mobile-width) {
     height: auto;
     display: flex;
     flex-direction: column-reverse;
@@ -33,7 +33,7 @@
 }
 
 .contacts__road-map {
-  @media (max-width: $tablet-width) {
+  @media (max-width: $max-mobile-width) {
     min-height: 316px;
   }
 }
@@ -51,11 +51,11 @@
   margin-bottom: 2px;
   font-style: normal;
 
-  @media (max-width: $desktop-width) {
+  @media (max-width: $max-tablet-width) {
     margin-bottom: 3px;
   }
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $max-mobile-width) {
     margin: 0 0 8px;
   }
 }
@@ -66,7 +66,7 @@
   line-height: 27px;
   font-weight: 500;
 
-  @media (max-width: $desktop-width) {
+  @media (max-width: $max-tablet-width) {
     margin-bottom: 26px;
   }
 }
@@ -82,7 +82,7 @@
   align-items: center;
   margin-bottom: 20px;
 
-  @media (max-width: $desktop-width) {
+  @media (max-width: $max-tablet-width) {
     align-items: flex-start;
     margin-bottom: 20px;
   }
@@ -96,7 +96,7 @@
   margin-right: 10px;
   display: block;
 
-  @media (max-width: $desktop-width) {
+  @media (max-width: $max-tablet-width) {
     margin-top: 4px;
   }
 }
@@ -109,7 +109,7 @@
   line-height: 24px;
   color: $base-dark-color;
 
-  @media (max-width: $desktop-width) {
+  @media (max-width: $max-tablet-width) {
     width: 260px;
   }
 }
@@ -121,7 +121,7 @@
   line-height: 24px;
   color: $base-dark-color;
 
-  @media (max-width: $desktop-width) {
+  @media (max-width: $max-tablet-width) {
     width: 260px;
   }
 }
