@@ -1,20 +1,23 @@
 .traveling {
-  width: 1160px;
+  width: calc(1160 / 1366 * 100%);
   margin: 0 auto 120px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 88px;
+  grid-template-columns: 1fr calc(560 / 1160 * 100%);
+  gap: calc(88 / 1366 * 100%);
 
   @media (max-width: $max-tablet-width) {
     width: 678px;
     margin-bottom: 94px;
+    grid-template-columns: 1fr 1fr;
     gap: 30px;
+    padding-left: 2px;
   }
 
   @media (max-width: $max-mobile-width) {
     display: block;
     width: 290px;
     margin-bottom: 65px;
+    padding-left: 0;
   }
 }
 
@@ -69,8 +72,8 @@
 }
 
 .traveling__picture {
-  height: 301px;
-  width: 560px;
+  height: 100%;
+  width: 100%;
   background: $base-dark-color;
 
   @media (max-width: $max-tablet-width) {
@@ -87,4 +90,6 @@
 .traveling__picture img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  display: block;
 }

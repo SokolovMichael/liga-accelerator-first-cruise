@@ -1,5 +1,5 @@
 .nav {
-  width: 1160px;
+  width: calc(1160 / 1366 * 100%);
   margin: 0 auto;
 
   @media (max-width: $max-tablet-width) {
@@ -25,6 +25,10 @@
     flex-direction: column;
     background: $base-light-color;
   }
+}
+
+.nav__link--active {
+  pointer-events: none;
 }
 
 .nav__logo {
@@ -57,40 +61,47 @@
   left: 50px;
 }
 
+.nav--opened .nav__list-wrapper {
+  @media (max-width: $max-mobile-width) {
+    background: rgba(0, 43, 102, 0.5);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
 .nav__list {
   @media (max-width: $max-mobile-width) {
     display: none;
+    flex-direction: column;
+    left: 35px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 10;
+    background: $base-light-color;
+    min-height: 568px;
+    box-sizing: border-box;
   }
 }
 
 .nav--nojs .nav__list {
   @media (max-width: $max-mobile-width) {
     display: flex;
-    flex-direction: column;
     position: static;
-    left: 35px;
-    right: 0;
-    top: 0;
-    z-index: 10;
-    background: $base-light-color;
-    min-height: 568px;
     padding: 33px 0 15px;
-    box-sizing: border-box;
   }
 }
 
 .nav--opened .nav__list {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  left: 35px;
-  right: 0;
-  top: 0;
-  z-index: 10;
-  background: $base-light-color;
-  min-height: 568px;
-  padding: 75px 15px 15px;
-  box-sizing: border-box;
+  @media (max-width: $max-mobile-width) {
+    display: flex;
+    position: absolute;
+    padding: 75px 15px 15px;
+    height: 100vh;
+  }
 }
 
 .nav__toggle {

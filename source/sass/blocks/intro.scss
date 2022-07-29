@@ -35,12 +35,12 @@
 }
 
 .intro__wrapper {
-  width: 970px;
+  width: calc(970 / 1366 * 100%);
   margin: 0 auto;
   padding-top: 270px;
 
   @media (max-width: $max-tablet-width) {
-    width: 678px;
+    width: 670px;
     padding-top: 268px;
   }
 

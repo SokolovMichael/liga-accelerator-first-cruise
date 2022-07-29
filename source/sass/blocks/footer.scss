@@ -1,5 +1,5 @@
 .footer__wrapper {
-  width: 1163px;
+  width: calc(1163 / 1366 * 100%);
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -8,6 +8,7 @@
   @media (max-width: $max-tablet-width) {
     width: 678px;
     min-height: 120px;
+    padding-left: 2px;
   }
 
   @media (max-width: $max-mobile-width) {
@@ -16,6 +17,7 @@
     flex-direction: column;
     align-items: flex-start;
     padding: 40px 0 38px;
+    padding-left: 0;
   }
 }
 
@@ -29,6 +31,10 @@
   @media (max-width: $max-mobile-width) {
     margin: 0 0 18px 3px;
   }
+}
+
+.footer__main--active {
+  pointer-events: none;
 }
 
 .footer__logo {

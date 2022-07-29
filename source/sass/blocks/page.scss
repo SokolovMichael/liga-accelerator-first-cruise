@@ -9,14 +9,6 @@
   min-width: $mobile-width-only;
   scroll-behavior: smooth;
 
-  @media (max-width: $max-tablet-width) {
-    padding: 0 4px;
-  }
-
-  @media (max-width: $max-mobile-width) {
-    padding: 0;
-  }
-
   @media (min-width: $mobile-width-only) {
     overflow-x: hidden;
   }
@@ -29,6 +21,16 @@
 
   @media (min-width: $mobile-width-only) {
     overflow-x: hidden;
+  }
+}
+
+.page__wrapper {
+  @media (max-width: $max-tablet-width) {
+    padding-left: 4px;
+  }
+
+  @media (max-width: $max-mobile-width) {
+    padding-left: 0;
   }
 }
 

@@ -4,7 +4,7 @@
   margin: 0 0 29px;
 
   @media (max-width: $max-mobile-width) {
-    margin-bottom: 28px;
+    margin-bottom: 31px;
   }
 }
 
@@ -13,12 +13,13 @@
   font-size: 18px;
   line-height: 27px;
   font-weight: 500;
-  width: 303px;
+  width: calc(303 * 1040 / 403 * 100%);
   margin-bottom: 27px;
 
   @media (max-width: $max-mobile-width) {
     line-height: 25px;
-    width: auto;
+    width: 214px;
+    margin: 0 auto 28px;
     text-align: center;
   }
 }

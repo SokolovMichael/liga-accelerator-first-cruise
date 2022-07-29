@@ -6,6 +6,8 @@
   @media (max-width: $max-mobile-width) {
     display: flex;
     padding-left: 28px;
+    align-items: center;
+    height: 20px;
   }
 }
 
@@ -21,7 +23,7 @@
   fill: $base-light-color;
 
   @media (max-width: $max-mobile-width) {
-    top: 8px;
+    top: 6px;
     left: 4px;
   }
 }
@@ -38,7 +40,7 @@
   @media (max-width: $max-mobile-width) {
     width: 20px;
     height: 20px;
-    top: 2px;
+    top: 0;
   }
 }
 
@@ -49,7 +51,6 @@
 
   @media (max-width: $max-mobile-width) {
     line-height: 12px;
-    width: 150px;
   }
 }
 

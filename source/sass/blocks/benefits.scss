@@ -33,15 +33,17 @@
 }
 
 .benefits__wrapper {
-  width: 1160px;
+  width: calc(1160 / 1366 * 100%);
   margin: 0 auto;
 
   @media (max-width: $max-tablet-width) {
     width: 678px;
+    padding-left: 2px;
   }
 
   @media (max-width: $max-mobile-width) {
     width: 290px;
+    padding-left: 0;
   }
 }
 
@@ -85,7 +87,7 @@
   min-height: 240px;
   background: $base-light-color;
   box-sizing: border-box;
-  padding: 80px 30px 0;
+  padding: 80px 30px 25px;
   position: relative;
 
   @media (max-width: $max-tablet-width) {
@@ -125,7 +127,7 @@
 }
 
 .benefits__item--all-inclusive p {
-  width: 280px;
+  width: calc(280 / 300 * 100%);
 
   @media (max-width: $max-tablet-width) {
     width: auto;
@@ -137,7 +139,7 @@
 }
 
 .benefits__item--tour p {
-  width: 241px;
+  width: calc(241 / 300 * 100%);
 
   @media (max-width: $max-tablet-width) {
     width: 167px;
