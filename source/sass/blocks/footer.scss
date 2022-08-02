@@ -2,12 +2,11 @@
   width: calc(1163 / 1366 * 100%);
   margin: 0 auto;
   display: flex;
-  align-items: center;
-  min-height: 138px;
+  align-items: flex-start;
+  padding: 46px 0 44px;
 
   @media (max-width: $max-tablet-width) {
     width: 678px;
-    min-height: 120px;
     padding-left: 2px;
   }
 

@@ -33,8 +33,14 @@
 }
 
 .contacts__road-map {
+  height: 306px;
+
+  @media (max-width: $max-tablet-width) {
+    height: 335px;
+  }
+
   @media (max-width: $max-mobile-width) {
-    min-height: 316px;
+    height: 316px;
   }
 }
 

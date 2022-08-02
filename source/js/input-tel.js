@@ -1,24 +1,11 @@
 const tel = document.querySelector('#tel');
 
-const checkTel = () => {
-  tel.addEventListener('focus', (_) => {
-    if (!/^\+\d*$/.test(tel.value)) {
-      tel.value = '+';
-    }
-  });
-};
-
-const cancelEnteringNonDigits = () => {
+const inputTel = () => {
   tel.addEventListener('keypress', (evt) => {
-    if (!/\d/.test(evt.key)) {
+    if (!/[+]/.test(evt.key) && !/[0-9]/.test(evt.key)) {
       evt.preventDefault();
     }
   });
-};
-
-const inputTel = () => {
-  checkTel();
-  cancelEnteringNonDigits();
 };
 
 export {inputTel};

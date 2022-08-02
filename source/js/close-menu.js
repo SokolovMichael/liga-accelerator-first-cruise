@@ -1,12 +1,12 @@
 const closeMenu = () => {
   if (document.querySelector('.page__header')) {
-    const navList = document.querySelector('.nav__list-wrapper');
+    const navWrapper = document.querySelector('.nav__wrapper');
     const navMain = document.querySelector('.nav');
     const page = document.querySelector('.page');
     const pageBody = page.querySelector('.page__body');
 
-    navList.addEventListener('click', (evt) => {
-      if (evt.target.className === 'nav__list-wrapper') {
+    navWrapper.addEventListener('click', (evt) => {
+      if (evt.target.className === 'nav__wrapper') {
         navMain.classList.remove('nav--opened');
         navMain.classList.add('nav--closed');
         page.style.overflow = 'auto';

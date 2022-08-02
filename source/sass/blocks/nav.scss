@@ -7,24 +7,54 @@
   }
 
   @media (max-width: $max-mobile-width) {
-    margin: 0 15px;
     width: auto;
   }
 }
 
 .nav__wrapper {
+  position: relative;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   min-height: 38px;
+
+  @media (max-width: $max-mobile-width) {
+    display: block;
+  }
 }
 
 .nav--nojs .nav__wrapper {
   @media (max-width: $max-mobile-width) {
-    align-items: flex-start;
     flex-direction: column;
     background: $base-light-color;
   }
+}
+
+.nav--opened .nav__wrapper {
+  @media (max-width: $max-mobile-width) {
+    background: rgba(0, 43, 102, 0.5);
+    height: 100vh;
+  }
+}
+
+.nav__link-wrapper {
+  @media (max-width: $max-tablet-width) {
+    margin-top: 10px;
+  }
+
+  @media (max-width: $max-mobile-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 38px;
+    padding: 12px 15px 0;
+    margin-top: 0;
+  }
+}
+
+.nav--opened .nav__link-wrapper {
+  background: $base-light-color;
+  margin-left: 35px;
 }
 
 .nav__link--active {
@@ -49,59 +79,11 @@
 .nav--nojs .nav__logo {
   @media (max-width: $max-mobile-width) {
     fill: $base-dark-color;
-    margin-top: 20px;
   }
 }
 
 .nav--opened .nav__logo {
   fill: $base-dark-color;
-  z-index: 11;
-  position: absolute;
-  top: 15px;
-  left: 50px;
-}
-
-.nav--opened .nav__list-wrapper {
-  @media (max-width: $max-mobile-width) {
-    background: rgba(0, 43, 102, 0.5);
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-}
-
-.nav__list {
-  @media (max-width: $max-mobile-width) {
-    display: none;
-    flex-direction: column;
-    left: 35px;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: 10;
-    background: $base-light-color;
-    min-height: 568px;
-    box-sizing: border-box;
-  }
-}
-
-.nav--nojs .nav__list {
-  @media (max-width: $max-mobile-width) {
-    display: flex;
-    position: static;
-    padding: 33px 0 15px;
-  }
-}
-
-.nav--opened .nav__list {
-  @media (max-width: $max-mobile-width) {
-    display: flex;
-    position: absolute;
-    padding: 75px 15px 15px;
-    height: 100vh;
-  }
 }
 
 .nav__toggle {
@@ -148,4 +130,39 @@
 
 .nav__toggle:active .nav__toggle-icon {
   opacity: 1;
+}
+
+.nav--opened .nav__list-wrapper {
+  @media (max-width: $max-mobile-width) {
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    position: absolute;
+    top: 50px;
+    left: 35px;
+    background: $base-light-color;
+    z-index: 10;
+  }
+}
+
+.nav__list {
+  @media (max-width: $max-mobile-width) {
+    display: none;
+    flex-direction: column;
+    box-sizing: border-box;
+    position: relative;
+    padding: 25px 15px 50px;
+  }
+}
+
+.nav--nojs .nav__list {
+  @media (max-width: $max-mobile-width) {
+    display: flex;
+  }
+}
+
+.nav--opened .nav__list {
+  @media (max-width: $max-mobile-width) {
+    display: flex;
+  }
 }

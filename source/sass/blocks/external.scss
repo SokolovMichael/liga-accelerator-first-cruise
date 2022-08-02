@@ -2,17 +2,19 @@
   list-style-type: none;
   padding: 0;
   display: flex;
-  margin: 4px 0 0;
+  flex-wrap: wrap;
+  margin: 15px 0 0;
   justify-content: space-between;
   width: 117px;
 
   @media (max-width: $max-tablet-width) {
     width: 95px;
-    margin-top: 0;
+    margin-top: 4px;
   }
 
   @media (max-width: $max-tablet-width) {
     width: 90px;
+    margin-top: 0;
   }
 }
 
