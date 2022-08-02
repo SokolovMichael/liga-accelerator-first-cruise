@@ -1,13 +1,18 @@
 .card {
   position: relative;
-  min-height: 386px;
   display: block;
   background: $base-dark-color;
-  padding: 337px 30px 22px;
+  padding: 337px 25px 22px 30px;
   box-sizing: border-box;
+
+  @media (max-width: 1365px) {
+    height: calc(386 / 1366 * 100vw);
+    padding-top: calc(337 / 1366 * 100vw);
+  }
 
   @media (max-width: $max-tablet-width) {
     padding: 330px 30px 22px 35px;
+    min-height: 386px;
   }
 
   @media (max-width: $max-mobile-width) {
@@ -20,6 +25,11 @@
 .card:focus {
   cursor: pointer;
   padding: 28px 25px 22px;
+
+  @media (max-width: 1365px) {
+    padding-top: calc(22 / 1366 * 100vw);
+    padding-bottom: calc(22 / 1366 * 100vw);
+  }
 
   @media (max-width: $max-tablet-width) {
     padding: 28px 35px 22px;
@@ -50,8 +60,9 @@
 
 .card__picture img {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
+  object-fit: cover;
 }
 
 .card:hover .card__picture img,
@@ -62,14 +73,20 @@
 
 .card h3 {
   margin: 0;
-  font-size: 1.32vw;
+  font-size: 18px;
   line-height: 27px;
   font-weight: 500;
   color: $base-light-color;
   position: relative;
 
+  @media (max-width: 1365px) {
+    font-size: calc(18 / 1366 * 100vw);
+    line-height: calc(27 / 1366 * 100vw);
+  }
+
   @media (max-width: $max-tablet-width) {
     font-size: 18px;
+    line-height: 27px;
   }
 }
 
@@ -79,7 +96,12 @@
   margin-bottom: 14px;
   opacity: 0.2;
 
+  @media (max-width: 1365px) {
+    margin-bottom: calc(14 / 1366 * 100vw);
+  }
+
   @media (max-width: $max-tablet-width) {
+    margin-bottom: 14px;
     opacity: 1;
   }
 }
@@ -99,7 +121,14 @@
   list-style-type: none;
   margin: 0 0 26px;
   padding: 0;
-  min-height: 217px;
+
+  @media (max-width: 1365px) {
+    margin-bottom: calc(26 / 1366 * 100vw);
+  }
+
+  @media (max-width: $max-tablet-width) {
+    margin-bottom: 26px;
+  }
 }
 
 .card__wrapper a {
@@ -108,9 +137,20 @@
   text-decoration: none;
   text-align: center;
   color: $base-dark-color;
+  font-size: 14px;
   font-weight: 600;
   line-height: 21px;
   padding: 9px 10px 10px;
+
+  @media (max-width: 1365px) {
+    font-size: calc(14 / 1366 * 100vw);
+    line-height: calc(21 / 1366 * 100vw);
+  }
+
+  @media (max-width: $max-tablet-width) {
+    font-size: 14px;
+    line-height: 21px;
+  }
 }
 
 .card__wrapper a:hover {

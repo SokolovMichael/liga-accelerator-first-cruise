@@ -4,10 +4,15 @@
   padding: 0;
   display: flex;
   flex-wrap: wrap;
+  width: 950px;
+
+  @media (max-width: 1365px) {
+    width: calc(950 / 1366 * 100vw);
+  }
 
   @media (max-width: $max-mobile-width) {
     flex-direction: column;
-    margin-bottom: 19px;
+    margin-bottom: 14px;
   }
 }
 

@@ -3,7 +3,7 @@
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  margin: 15px 0 0;
+  margin: 5px 0 0;
   justify-content: space-between;
   width: 117px;
 
@@ -23,10 +23,11 @@
 }
 
 .external__link {
-  padding: 15px;
+  padding: 20px 15px;
+  display: block;
 
   @media (max-width: $max-tablet-width) {
-    padding: 10px;
+    padding: 15px 10px;
   }
 }
 

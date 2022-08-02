@@ -33,8 +33,12 @@
 }
 
 .benefits__wrapper {
-  width: calc(1160 / 1366 * 100%);
+  width: 1160px;
   margin: 0 auto;
+
+  @media (max-width: 1365px) {
+    width: calc(1160 / 1366 * 100vw);
+  }
 
   @media (max-width: $max-tablet-width) {
     width: 678px;

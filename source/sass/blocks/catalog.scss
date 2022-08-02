@@ -1,6 +1,10 @@
 .catalog {
-  width: calc(1130 / 1366 * 100%);
+  width: 1130px;
   margin: 0 auto 120px;
+
+  @media (max-width: 1365px) {
+    width: calc(1130 / 1366 * 100%);
+  }
 
   @media (max-width: $max-tablet-width) {
     width: 648px;

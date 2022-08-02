@@ -33,12 +33,17 @@
 }
 
 .booking__wrapper {
-  width: calc(1040 / 1366 * 100%);
+  width: 1040px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr calc(403 / 1040 * 100%);
   min-height: 455px;
-  gap: calc(144 / 1040 * 100%);
+  gap: 144px;
+
+  @media (max-width: 1365px) {
+    width: calc(1040 / 1366 * 100vw);
+    gap: calc(144 / 1040 * 100%);
+  }
 
   @media (max-width: $max-tablet-width) {
     width: 419px;

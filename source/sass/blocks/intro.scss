@@ -35,9 +35,13 @@
 }
 
 .intro__wrapper {
-  width: calc(970 / 1366 * 100%);
+  width: 970px;
   margin: 0 auto;
   padding-top: 270px;
+
+  @media (max-width: 1365px) {
+    width: calc(970 / 1366 * 100vw);
+  }
 
   @media (max-width: $max-tablet-width) {
     width: 670px;

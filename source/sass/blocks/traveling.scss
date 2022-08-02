@@ -1,9 +1,14 @@
 .traveling {
-  width: calc(1160 / 1366 * 100%);
+  width: 1160px;
   margin: 0 auto 120px;
   display: grid;
   grid-template-columns: 1fr calc(560 / 1160 * 100%);
-  gap: calc(88 / 1366 * 100%);
+  gap: 88px;
+
+  @media (max-width: 1365px) {
+    width: calc(1160 / 1366 * 100vw);
+    gap: calc(88 / 1366 * 100vw);
+  }
 
   @media (max-width: $max-tablet-width) {
     width: 678px;

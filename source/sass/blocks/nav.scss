@@ -1,6 +1,10 @@
 .nav {
-  width: calc(1160 / 1366 * 100%);
+  width: 1160px;
   margin: 0 auto;
+
+  @media (max-width: 1365px) {
+    width: calc(1160 / 1366 * 100vw);
+  }
 
   @media (max-width: $max-tablet-width) {
     width: 678px;
@@ -38,8 +42,10 @@
 }
 
 .nav__link-wrapper {
+  margin-right: 20px;
+
   @media (max-width: $max-tablet-width) {
-    margin-top: 10px;
+    margin: 10px 10px 0 0;
   }
 
   @media (max-width: $max-mobile-width) {
@@ -48,7 +54,7 @@
     align-items: center;
     min-height: 38px;
     padding: 12px 15px 0;
-    margin-top: 0;
+    margin: 0;
   }
 }
 
